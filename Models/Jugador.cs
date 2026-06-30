@@ -6,4 +6,7 @@ public class Jugador{
     public int peso{get; set;}
     public string club{get;set;}
     public string posición{get;set;}
+    public string seleccion{get; set;}
+
+    
 }
