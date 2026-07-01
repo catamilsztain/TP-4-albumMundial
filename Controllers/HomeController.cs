@@ -12,9 +12,21 @@ public class HomeController : Controller
     {
         _logger = logger;
     }
-
+    
     public IActionResult Index()
     {
+        Figurita figurita1 = new figurita();
+        public int[] figuritasSobre = {get;set;}
+        public bool[] pegada = {get;set;}
+
+        for (int i = 0; i<7; i++){
+            figuritasSobre[i] = figurita1.ObtenerFigu();
+            if(figurita1.esPegada() == false){
+                
+            }
+        }
+        
+
         return View();
     }
 
