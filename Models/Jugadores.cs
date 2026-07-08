@@ -1,4 +1,4 @@
-public class Jugador{
+public class Jugadores{
     public string Nombre {get;set;}
     public string Apellido {get;set;}
     public int Número {get; set;}
@@ -7,6 +7,7 @@ public class Jugador{
     public string club{get;set;}
     public string posición{get;set;}
     public string seleccion{get; set;}
+    public int Camiseta {get;set;}
 
     
 }

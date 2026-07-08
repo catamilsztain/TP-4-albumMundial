@@ -15,19 +15,23 @@ public class HomeController : Controller
     
     public IActionResult Index()
     {
-        Figurita figurita1 = new figurita();
-        public int[] figuritasSobre = {get;set;}
-        public bool[] pegada = {get;set;}
-
-        for (int i = 0; i<7; i++){
-            figuritasSobre[i] = figurita1.ObtenerFigu();
-            if(figurita1.esPegada() == false){
-                
-            }
-        }
-        
-
         return View();
+    }
+    [HttpPost]
+
+    public IActionResult Album(){
+        int[] figuritasSobre = new int[6];
+        Jugadores[] jugadores = new Jugadores[6];
+        for (int i = 0; i<7; i++){
+            Figurita figurita1 = new figurita();
+            figuritasSobre[i] = figurita1.ObtenerFigu();
+        }
+        jugadores = BD.ObtenerJugador(figuritasSobre);
+
+    }
+
+    public IActionResult Archivo(){
+        
     }
 
     public IActionResult Privacy()

@@ -1,12 +1,12 @@
 public class Figurita{
-    public int figu = {get;set;}
-    private int contadorRepe = 0;
+    public int figu {get;set;}
+    public int contadorRepe {get;set;}
 
     public int ObtenerFigu(){
         Random random = new Random();
         int numero = random.Next(1,30);
         this.figu = numero;
-        contadorRepe = contadorRepe + 1;
+        BD.Pegar();
         return this.figu;
     }
 
@@ -19,8 +19,5 @@ public class Figurita{
         }
     }
 
-    public void PegarFigu(){
-        
-    }
     
 }
