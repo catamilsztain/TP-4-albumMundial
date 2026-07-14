@@ -4,9 +4,9 @@ public class Figurita{
 
     public int ObtenerFigu(){
         Random random = new Random();
-        int numero = random.Next(1,30);
+        int numero = random.Next(1,21);
         this.figu = numero;
-        BD.Pegar();
+        BD.Pegar(numero);
         return this.figu;
     }
 

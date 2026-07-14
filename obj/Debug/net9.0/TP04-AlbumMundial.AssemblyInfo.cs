@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TP04-AlbumMundial")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ca36637fb8ca4b45770c39fa4615b5bd26541e3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b387b7e22e73b111503d0fd7e10b3f171dbe27e")]
 [assembly: System.Reflection.AssemblyProductAttribute("TP04-AlbumMundial")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TP04-AlbumMundial")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

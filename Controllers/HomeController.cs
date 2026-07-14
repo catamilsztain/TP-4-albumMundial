@@ -22,16 +22,21 @@ public class HomeController : Controller
     public IActionResult Album(){
         int[] figuritasSobre = new int[6];
         Jugadores[] jugadores = new Jugadores[6];
-        for (int i = 0; i<7; i++){
-            Figurita figurita1 = new figurita();
+        Figurita figurita1 = new Figurita();
+        for (int i = 0; i<figuritasSobre.Length; i++){
             figuritasSobre[i] = figurita1.ObtenerFigu();
         }
         jugadores = BD.ObtenerJugador(figuritasSobre);
 
+        ViewBag.Jugadores = jugadores;
+
+        return View("obteni2");
+    
+        //Hay que hacer uan viewbag que muestre los jugadores
     }
 
     public IActionResult Archivo(){
-        
+        return View();
     }
 
     public IActionResult Privacy()

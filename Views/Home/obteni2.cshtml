@@ -1,1 +1,17 @@
 <h1>Album del mundial - FIFA 2026 USA, MEX, CAN</h1>
+
+@foreach (Jugadores jugador in ViewBag.Jugadores)
+{
+    <div>
+        <h3>@jugador.Nombre @jugador.Apellido</h3>
+        <p>Número: @jugador.Número</p>
+        <p>Club: @jugador.club</p>
+        <p>Posición: @jugador.posición</p>
+    </div>
+}
+<form action="@Url.Action("Album", "Home")" method = "POST">
+    <button>Abrir otro sobre</button>
+</form>
+<form action="@Url.Action("Archivo", "Home")" method = "POST">
+    <button>Ver todas mis figus</button>
+</form>
