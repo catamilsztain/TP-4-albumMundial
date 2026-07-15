@@ -1,0 +1,37 @@
+INSERT INTO Selecciones (Nombre, Grupo)
+VALUES
+('Argentina', 'A'),
+( 'Francia', 'D'),
+('España', 'E'),
+( 'Inglaterra', 'K'),
+( 'Noruega', 'I'),
+( 'Marruecos', 'F');
+
+INSERT INTO Jugadores (Nombre, Apellido, [Número], edad, peso, club, [posición],IdSeleccion, Camiseta)
+VALUES
+('Lionel', 'Messi', 10, 39, 67, 'Inter Miami', 'Delantero', 1, 10),
+('Julián', 'Álvarez', 9, 26, 71, 'Atlético de Madrid', 'Delantero', 1, 9),
+('Emiliano', 'Martínez', 23, 33, 88, 'Aston Villa', 'Arquero', 1, 23),
+('Rodrigo', 'De Paul', 7, 32, 70, 'Atlético de Madrid', 'Mediocampista', 1, 7),
+('Cristian', 'Romero', 13, 28, 79, 'Tottenham', 'Defensor', 1, 13),
+
+('Kylian', 'Mbappé', 10, 27, 75, 'Real Madrid', 'Delantero', 2, 10),
+('Ousmane', 'Dembélé', 11, 29, 67, 'Paris Saint-Germain', 'Extremo', 2, 11),
+('Eduardo', 'Camavinga', 8, 23, 68, 'Real Madrid', 'Mediocampista', 2, 8),
+('William', 'Saliba', 17, 25, 83, 'Arsenal', 'Defensor', 2, 17),
+
+('Lamine', 'Yamal', 19, 19, 72, 'Barcelona', 'Extremo', 3, 19),
+('Pedri', 'González', 8, 23, 60, 'Barcelona', 'Mediocampista', 3, 8),
+('Rodri', 'Hernández', 16, 30, 82, 'Manchester City', 'Mediocampista', 3, 16),
+('Unai', 'Simón', 23, 29, 89, 'Athletic Club', 'Arquero', 3, 23),
+
+('Harry', 'Kane', 9, 33, 86, 'Bayern Múnich', 'Delantero', 4, 9),
+('Jude', 'Bellingham', 10, 23, 75, 'Real Madrid', 'Mediocampista', 4, 10),
+('Bukayo', 'Saka', 7, 25, 72, 'Arsenal', 'Extremo', 4, 7),
+
+('Erling', 'Haaland', 9, 26, 94, 'Manchester City', 'Delantero', 5, 9),
+('Martin', 'Ødegaard', 10, 28, 68, 'Arsenal', 'Mediocampista', 5, 10),
+
+('Achraf', 'Hakimi', 2, 28, 73, 'Paris Saint-Germain', 'Defensor', 6, 2),
+('Yassine', 'Bounou', 1, 35, 78, 'Al-Hilal', 'Arquero', 6, 1);
+

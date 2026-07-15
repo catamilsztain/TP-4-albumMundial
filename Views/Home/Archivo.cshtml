@@ -1,0 +1,31 @@
+<h1>Mi Álbum</h1>
+
+@if (ViewBag.Album == null || ViewBag.Album.Count == 0)
+{
+    <p>Todavía no conseguiste ninguna figurita.</p>
+}
+else
+{
+    <div>
+        @foreach (Figurita f in ViewBag.Album){
+            <h2>Figurita @f.jugador.ID</h2>
+            <h2>@f.jugador.Nombre @f.jugador.Apellido</h2>
+            <h2>Selección @f.jugador.IdSeleccion</h2>
+            @if(f.contadorRepe == 1){
+                <p>Pegada</p>
+            }
+            else{
+                <p>@(f.contadorRepe - 1) repetidas</p>
+            }
+        }
+    </div>
+    <table class="table">
+        <tr>
+            <th>Figurita</th>
+            <th>Jugador</th>
+            <th>Selección</th>
+            <th>Cantidad</th>
+            <th>Estado</th>
+        </tr>
+    </table>
+}

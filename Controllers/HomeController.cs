@@ -25,17 +25,17 @@ public class HomeController : Controller
         Figurita figurita1 = new Figurita();
         for (int i = 0; i<figuritasSobre.Length; i++){
             figuritasSobre[i] = figurita1.ObtenerFigu();
+            BD.SumarRepetida(figuritasSobre[i]);
         }
         jugadores = BD.ObtenerJugador(figuritasSobre);
-
         ViewBag.Jugadores = jugadores;
 
         return View("obteni2");
-    
-        //Hay que hacer uan viewbag que muestre los jugadores
     }
 
     public IActionResult Archivo(){
+
+        ViewBag.Album = BD.ObtenerAlbum();
         return View();
     }
 
